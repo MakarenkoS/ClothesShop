@@ -1,0 +1,35 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+html {
+  font-family: "Lato";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+._container {
+  max-width: 79.06rem;
+  padding: 0 0.937rem;
+  margin: 0 auto;
+}
+
+
+
+
+.button {
+@extend %button;
+}
+

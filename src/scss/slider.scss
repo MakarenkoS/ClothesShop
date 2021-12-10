@@ -1,0 +1,95 @@
+@import "_variables.scss";
+
+.slider {
+  background-color: $primary;
+  min-height: calc(100vh - 10rem);
+  background-image: url("../img/slider_1.jpg");
+  background-size: cover;
+  color: $gray900;
+  background-position: 35% 0;
+
+  &__wrapper {
+    max-width: 116rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 8.75rem;
+  }
+
+  &__arrow {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.5;
+
+    &--right {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__info {
+    max-width: 79.06rem;
+    flex-grow: 1;
+  }
+
+  &__category {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 150%;
+    font-size: 1.125rem;
+    color: $gray900;
+  }
+
+  &__name {
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 130%;
+  }
+
+  &__button {
+    margin-right: 1.5rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    margin-top: 11.31rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 11.25rem;
+  }
+  &__item {
+    margin-right: 0.25rem;
+    &:last-child {
+      margin-right: 0;
+    }
+    & a {
+      width: 11.125rem;
+      padding-bottom: 0.75rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-decoration: none;
+      color: $gray800;
+      font-weight: 900;
+      font-size: 1.75rem;
+      line-height: 150%;
+      border-bottom: 1px solid $gray800;
+      opacity: 0.6;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+@import "variables.scss";
+
+.topbar {
+ 
+  background-color: $gray900;
+  color: #ffffff;
+  // overflow: hidden;
+
+  &__wrapper {
+    min-height: 2.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__info {
+    font-size: 14px;
+    line-height: 150%;
+    opacity: 0.6;
+    &--normal {
+      font-weight: 400;
+    }
+
+    &--bold {
+      font-weight: 900;
+    }
+  }
+
+  &__menu {
+    min-width: 22.62rem;
+  }
+
+  &__items {
+    width: 100%;
+  }
+
+  &__item {
+    margin: 0 10px;
+    & a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 14px;
+      opacity: 0.6;
+      font-weight: 400;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__items {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__settings {
+    width: 17.18rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+
+  }
+
+  &__concurency {
+    position: relative;
+    width: 6rem;
+    &::after {
+      position: absolute;
+      content: "";
+      left: -5px;
+      top: 0;
+      transform: translateY(calc(50% - 3px));
+      width: 20px;
+      height: 12px;
+      background-image: url('./../img/flag-usa.png');
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__concurency-select {
+    margin-left: 20px;
+    display: block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    width: 4.18rem;
+    opacity: 0.6;
+    color: rgb(255, 255, 255);
+    line-height: 1.3;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    &:hover {
+      opacity: 1;
+    }
+    & option {
+      background-color: #000;
+      color: #a5a6ab;
+      opacity: 0.6;
+    }
+  }
+
+
+  &__buttons {
+    & span {
+      font-weight: 400;
+      color: #ffffff;
+      opacity: 0.6;
+    }
+  }
+
+  &__button {
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    opacity: 0.6;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+
+}
+
